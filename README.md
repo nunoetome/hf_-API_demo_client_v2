@@ -1,5 +1,5 @@
 ---
-title: API Demo Client V2
+title: ≼ API Demo Client V2 ≽
 emoji: 🔌👩🏻‍💻
 colorFrom: yellow
 colorTo: red

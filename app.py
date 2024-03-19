@@ -41,7 +41,6 @@ def get_bmc_markdown():
                 # """ + image_link_markdown
     return full_text
 
-   
 def send_request(input_text, input_server):
     server = Client(input_server) 
     result = server.predict(

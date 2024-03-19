@@ -5,19 +5,16 @@ from gradio_client import Client
 DEBUG_MODE = True
 
 MESAGE_HEADER = """
-# 🔌👩🏻‍💻  API Demo (Client component)  🔌👩🏻‍💻
-
+# 🔌👩🏻‍💻  2nd API Demo (Client component)  🔌👩🏻‍💻
 
 Welcome to my simple demonstration of the gradio potential as an API.
 
-It is made of 2 components: *API_demo_server* and *API_demo_client*.
+This is an evolution of the first API demo. (Nuno-Tome/aPI_demo_client)
 
-* Server component: 🔌🌐 [Nuno-Tome/API_demo_server](Nuno-Tome/aPI_demo_server)
-
-* Client component: 🔌👩🏻‍💻 [Nuno-Tome/API_demo_client](Nuno-Tome/aPI_demo_client)
+It is made of 2 components: An client that requests to a introduced server. This server should respont whith a JSON to a given text.
+* Exemple Server: 🔌🌐 [Nuno-Tome/API_demo_server](Nuno-Tome/aPI_demo_server)
 
 **Just write you message and watch it be returned by the server.**   
-                
 """
 
 INPUT_TEXT_DEFAULT = """
@@ -31,7 +28,6 @@ Não posso querer ser nada.
 """
 
 INPUT_SERVER_DEFAULT = "Nuno-Tome/API_demo_server"
-
 
 
 def get_bmc_markdown():

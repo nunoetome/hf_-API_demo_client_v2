@@ -34,8 +34,8 @@ def get_bmc_markdown():
 
    
 def send_request(text):
-    client = Client("Nuno-Tome/API_demo_server")
-    result = client.predict(
+    server = Client("Nuno-Tome/API_demo_server") 
+    result = server.predict(
         text,
         api_name="/predict"
     )
@@ -49,12 +49,19 @@ with gr.Blocks() as demo:
      
     with gr.Row():
         with gr.Column():
-            gr.Markdown("**Type your message:**")
-            inp = gr.TextArea(placeholder="What is your name?")
+            input_text = gr.TextArea(
+                placeholder="What is your name?",  
+                label= "**Type your message:**"
+                )
+            input_server = gr.Textbox(
+                lines = 1, 
+                placeholder = "Server URL", 
+                label= "**Type the server to call:**"
+                )
         with gr.Column():
             gr.Markdown("**This is your gradio api request response:**")
             out = gr.JSON()  
     btn = gr.Button("Send request to server")
-    btn.click(fn=send_request, inputs=inp, outputs=out)
+    btn.click(fn=send_request, inputs=input_text, outputs=out)
  
 demo.launch(share=True)

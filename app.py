@@ -19,7 +19,7 @@ It is made of 2 components: *API_demo_server* and *API_demo_client*.
 **Just write you message and watch it be returned by the server.**   
                 
 """
-
+ 
 
 def get_bmc_markdown():
     bmc_link = "https://www.buymeacoffee.com/nuno.tome"
